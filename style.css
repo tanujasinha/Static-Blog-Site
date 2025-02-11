@@ -1,18 +1,19 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-header{
+
+header {
     position: sticky;
     top: 0px;
     background-color: white;
     height: 12vh;
 }
+
 h1 {
     margin-top: 0;
     font-size: 2.5em;
-    padding: 10px;
+    padding: 10px 20px;
     display: inline-block;
 }
 
@@ -22,19 +23,22 @@ h1 {
     font-size: 1.5em;
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 20px;
     border: none;
     padding: 10px;
     font-weight: bold;
 }
+
 #add:hover {
     background-color: darkgreen;
 }
+
 #add:active {
     background-color: green;
 }
-main{
-    padding: 10px;
+
+main {
+    padding: 20px;
 }
 
 #new-post-form {
@@ -77,19 +81,38 @@ main{
     background-color: darkgreen;
 }
 
-.blog-post{
-    border:1px solid black;
+.blog-post {
+    background-color: hsl(182, 25%, 70%);
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px;
     max-height: 200px;
     overflow-y: scroll;
-    margin: 10px 0px;
+    margin: 20px 0px;
+    box-sizing: border-box;
 }
-footer{
+
+.image-resize{
+    margin-top: 10px;
+    width: 150px ;
+    float: left;
+    margin-right: 10px;
+}
+.blog-post .italic{
+    font-style: italic;
+}
+
+
+
+.blog-post:hover {
+    border: 2px solid gray;
+}
+
+footer {
     background-color: rgba(0, 0, 0, 0.316);
     width: 100%;
 }
-footer p{
+
+footer p {
     padding: 10px;
     text-align: center;
 }

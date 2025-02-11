@@ -14,36 +14,30 @@
         <div id="add" onclick="createPost()">+ New</div>
     </header>
     <main>
-        <form id="new-post-form" >
+        <form id="new-post-form">
             <label>Title</label>
-            <input type="text" id="post-title" required>
-            <br>
+            <input type="text" id="post-title" placeholder="Enter the topic of the blog post">
+
+            <label>Author</label>
+            <input type="text" id="author-name" placeholder="Enter your name">
+
+            <label>Image</label>
+            <input type="file" id="post-image">
+            <br><br>
             <label>Description</label>
-            <textarea rows="10" id="post-description" required></textarea>
+            <textarea rows="10" id="post-description" placeholder="Write about the topic"></textarea>
             <button type="submit">Post</button>
         </form>
         <div class="blog-post">
-            <h3>Title of post</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi repellat quibusdam porro amet aliquid est
-                in iure, numquam, architecto beatae cumque consequatur cupiditate fugiat! Ab iste maxime laudantium
-                consequuntur sequi autem porro voluptatibus reiciendis id? Numquam, sit. Atque quas ex voluptatibus,
-                praesentium sed rerum velit illo maiores. Repellendus tempora, quas aliquam fugit temporibus quod odio
-                fuga autem rem harum obcaecati eos sed repellat eligendi mollitia possimus quo, debitis reprehenderit
+            <h3><span>Title of post</span> - <span class="italic">author name</span></h3>
+            <img src="images/football1.jpg" class="image-resize">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi Atque quas ex voluptatibus,
+         ia possimus quo, debitis reprehenderit
                 voluptatum. Harum, distinctio pariatur quia sint, sunt, est eos aperiam quae accusamus debitis voluptate
                 ut cumque. Eaque commodi vero sit veniam, sapiente atque ea, delectus quos ut sunt vitae nemo
                 dignissimos!</p>
         </div>
-        <div class="blog-post">
-            <h3>Title of post</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi repellat quibusdam porro amet aliquid est
-                in iure, numquam, architecto beatae cumque consequatur cupiditate fugiat! Ab iste maxime laudantium
-                consequuntur sequi autem porro voluptatibus reiciendis id? Numquam, sit. Atque quas ex voluptatibus,
-                praesentium sed rerum velit illo maiores. Repellendus tempora, quas aliquam fugit temporibus quod odio
-                fuga autem rem harum obcaecati eos sed repellat eligendi mollitia possimus quo, debitis reprehenderit
-                voluptatum. Harum, distinctio pariatur quia sint, sunt, est eos aperiam quae accusamus debitis voluptate
-                ut cumque. Eaque commodi vero sit veniam, sapiente atque ea, delectus quos ut sunt vitae nemo
-                dignissimos!</p>
-        </div>
+        
     </main>
     <footer>
         <p>&copy 2025 Tanuja Sinha, All rights reserved</p>
