@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Static Blog Site</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Static Blog Site</h1>
         <div id="add" onclick="createPost()">+ New</div>
     </header>
     <main>
-        <form id="new-post-form" onsubmit="addPost()">
+        <form id="new-post-form" >
             <label>Title</label>
-            <br>
-            <input type="text" required>
+            <input type="text" id="post-title" required>
             <br>
             <label>Description</label>
-            <br>
-            <textarea rows="10" required></textarea>
-            <br>
+            <textarea rows="10" id="post-description" required></textarea>
             <button type="submit">Post</button>
         </form>
         <div class="blog-post">
             <h3>Title of post</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi repellat quibusdam porro amet aliquid est in iure, numquam, architecto beatae cumque consequatur cupiditate fugiat! Ab iste maxime laudantium consequuntur sequi autem porro voluptatibus reiciendis id? Numquam, sit. Atque quas ex voluptatibus, praesentium sed rerum velit illo maiores. Repellendus tempora, quas aliquam fugit temporibus quod odio fuga autem rem harum obcaecati eos sed repellat eligendi mollitia possimus quo, debitis reprehenderit voluptatum. Harum, distinctio pariatur quia sint, sunt, est eos aperiam quae accusamus debitis voluptate ut cumque. Eaque commodi vero sit veniam, sapiente atque ea, delectus quos ut sunt vitae nemo dignissimos!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi repellat quibusdam porro amet aliquid est
+                in iure, numquam, architecto beatae cumque consequatur cupiditate fugiat! Ab iste maxime laudantium
+                consequuntur sequi autem porro voluptatibus reiciendis id? Numquam, sit. Atque quas ex voluptatibus,
+                praesentium sed rerum velit illo maiores. Repellendus tempora, quas aliquam fugit temporibus quod odio
+                fuga autem rem harum obcaecati eos sed repellat eligendi mollitia possimus quo, debitis reprehenderit
+                voluptatum. Harum, distinctio pariatur quia sint, sunt, est eos aperiam quae accusamus debitis voluptate
+                ut cumque. Eaque commodi vero sit veniam, sapiente atque ea, delectus quos ut sunt vitae nemo
+                dignissimos!</p>
         </div>
         <div class="blog-post">
             <h3>Title of post</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi repellat quibusdam porro amet aliquid est in iure, numquam, architecto beatae cumque consequatur cupiditate fugiat! Ab iste maxime laudantium consequuntur sequi autem porro voluptatibus reiciendis id? Numquam, sit. Atque quas ex voluptatibus, praesentium sed rerum velit illo maiores. Repellendus tempora, quas aliquam fugit temporibus quod odio fuga autem rem harum obcaecati eos sed repellat eligendi mollitia possimus quo, debitis reprehenderit voluptatum. Harum, distinctio pariatur quia sint, sunt, est eos aperiam quae accusamus debitis voluptate ut cumque. Eaque commodi vero sit veniam, sapiente atque ea, delectus quos ut sunt vitae nemo dignissimos!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi repellat quibusdam porro amet aliquid est
+                in iure, numquam, architecto beatae cumque consequatur cupiditate fugiat! Ab iste maxime laudantium
+                consequuntur sequi autem porro voluptatibus reiciendis id? Numquam, sit. Atque quas ex voluptatibus,
+                praesentium sed rerum velit illo maiores. Repellendus tempora, quas aliquam fugit temporibus quod odio
+                fuga autem rem harum obcaecati eos sed repellat eligendi mollitia possimus quo, debitis reprehenderit
+                voluptatum. Harum, distinctio pariatur quia sint, sunt, est eos aperiam quae accusamus debitis voluptate
+                ut cumque. Eaque commodi vero sit veniam, sapiente atque ea, delectus quos ut sunt vitae nemo
+                dignissimos!</p>
         </div>
     </main>
     <footer>
@@ -37,4 +50,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
