@@ -27,9 +27,14 @@ newPostForm.addEventListener("submit", function (event) {
     authorSpan.textContent = authorName.value;
     authorSpan.classList.add("italic");
 
+    const timeSpan = document.createElement("span");
+    timeSpan.textContent = `Posted on ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeString()}`;
+    timeSpan.classList.add("time");
+
     title.append(titleSpan);
     title.appendChild(document.createTextNode(" by "));
     title.appendChild(authorSpan);
+    title.appendChild(timeSpan);
     blogPost.appendChild(title);
 
     //create image if file is selected
@@ -45,5 +50,6 @@ newPostForm.addEventListener("submit", function (event) {
     description.textContent = postDescription.value;
 
     blogPost.appendChild(description);
-    main.prepend(blogPost);
+    main.insertBefore(blogPost,this.nextSibling);
+    newPostForm.reset();
 });

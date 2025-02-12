@@ -85,23 +85,31 @@ main {
     background-color: hsl(182, 25%, 70%);
     border-radius: 5px;
     padding: 20px;
-    max-height: 200px;
+    max-height: 500px;
     overflow-y: scroll;
     margin: 20px 0px;
     box-sizing: border-box;
 }
 
-.image-resize{
+.image-resize {
     margin-top: 10px;
-    width: 150px ;
+    width: 150px;
     float: left;
     margin-right: 10px;
 }
-.blog-post .italic{
+
+.blog-post .italic {
     font-style: italic;
 }
 
+.time {
+    font-size: 0.8em;
+    color: red;
+   float: right;
+   margin-right: 20px;
+   font-weight: 100;
 
+}
 
 .blog-post:hover {
     border: 2px solid gray;
